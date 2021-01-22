@@ -1,0 +1,41 @@
+html,
+body {
+  box-sizing: border-box;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    height: -webkit-fill-available;
+  } // End Phone & Below
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: $hover;
+  color: $callout;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+  color: $callout;
+}
+
+a {
+  text-decoration: none;
+  color: $callout;
+  transition: $transition;
+  padding: 0.5rem;
+
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+}

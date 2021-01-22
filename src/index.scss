@@ -1,0 +1,42 @@
+$tablet: 1024px;
+$big-phone: 840px;
+$phone: 767px;
+$small-phone:480px;
+
+$background: #ffffff;
+$background-alt: #f1f7fd;
+$foreground: #112240;
+$callout: #66a2ef;
+$hover: #cacfd5;
+$placeholder: #9aa3ad;
+$input: #dbe9f9;
+
+$wrap: calc(100% - 10rem);
+$wrap-mobile: calc(100% - 2rem);
+$space: 2rem;
+$half-space: 1rem;
+$quarter-space: 0.5rem;
+
+$base: 16px;
+$font: -apple-system, BlinkMacSystemFont, sans-serif;
+$transition: all 0.2s;
+
+
+// Imports
+@import './styles/globals';
+@import './styles/utils';
+@import './styles/layout';
+
+// // Media Queries
+
+// Primary Mobile - Tablet & Below
+// @media screen and (max-width: $tablet) {} // End Tablet & Below
+
+// Big Phone
+// @media screen and (max-width: $big-phone) {} // End Big Phone
+
+// Secondary Mobile - Phone & Below
+// @media screen and (max-width: $phone) {} // End Phone & Below
+
+// Small Phone
+// @media only screen and (max-width: $small-phone) {} // End Small Phone

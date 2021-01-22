@@ -1,0 +1,28 @@
+{
+  "name": "parcel-boilerplate",
+  "version": "1.0.0",
+  "description": "Parcel  boilerplate with Sass",
+  "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattmaneval/parcel-boilerplate.git"
+  },
+  "author": "Matt Maneval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattmaneval/parcel-boilerplate/issues"
+  },
+  "homepage": "https://github.com/mattmaneval/parcel-boilerplate#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.5"
+  },
+}
