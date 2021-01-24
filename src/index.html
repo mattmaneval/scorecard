@@ -1,114 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
-    <title>Scorecard</title>
-    <link rel="stylesheet"  href="./index.scss">
-  </head>
-  <body>
-    <header>
-      <h1>Scorecard</h1>
-      <a href="https://github.com/mattmaneval/parcel-boilerplate.git" title="View this app's GitHub repository.">GitHub</a>
-    </header>
-    <main>
-      <div class="scorecard">
-        <div class="hole">
-          <div class="hole-number">1</div>
-          <input min="1" id="1" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">2</div>
-          <input min="1" id="2" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">3</div>
-          <input min="1" id="3" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">4</div>
-          <input min="1" id="4" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">5</div>
-          <input min="1" id="5" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">6</div>
-          <input min="1" id="6" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">7</div>
-          <input min="1" id="7" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">8</div>
-          <input min="1" id="8" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">9</div>
-          <input min="1" id="9" type="number">
-        </div>
-        <div class="front-nine">
-          <button class="calculate-front" type="button" name="button">Calculate Front Score</button>
-          <h4>Front:</h4>
-          <div class="front-nine-total"></div>
-        </div>
-        <div class="hole">
-          <div class="hole-number">10</div>
-          <input min="1" id="10" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">11</div>
-          <input min="1" id="11" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">12</div>
-          <input min="1" id="12" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">13</div>
-          <input min="1" id="13" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">14</div>
-          <input min="1" id="14" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">15</div>
-          <input min="1" id="15" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">16</div>
-          <input min="1" id="16" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">17</div>
-          <input min="1" id="17" type="number">
-        </div>
-        <div class="hole">
-          <div class="hole-number">18</div>
-          <input min="1" id="18" type="number">
-        </div>
-        <div class="front-nine">
-          <h4>Front:</h4>
-          <div class="front-nine-total"></div>
-        </div>
-        <div class="back-nine">
-          <button class="calculate-back" type="button" name="button">Calculate Back Score</button>
-          <h4>Back:</h4>
-          <div class="back-nine-total"></div>
-        </div>
-        <div class="score">
-          <button class="calculate-total" type="button" name="button">Calculate Total Score</button>
-          <h4>Score: </h4>
-          <div class="score-combined"></div>
-        </div>
-      </div><!-- End scorecard -->
-    </main>
-    <footer>
-      <a href="https://mattmaneval.com/">&#128736;&#65039; by Matt Maneval</a>
-    </footer>
-  <script src="scripts.js"></script>
-  </body>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+	<title>Scorecard</title>
+	<link rel="stylesheet" href="./index.scss">
+</head>
+
+<body>
+	<header>
+		<h1>Scorecard</h1>
+		<a href="https://github.com/mattmaneval/parcel-boilerplate.git"
+			title="View this app's GitHub repository.">GitHub</a>
+	</header>
+	<main>
+		<div class="scorecard">
+
+			<form>
+				<div class="hole">
+					<div class="hole-number">1</div>
+					<input min="1" id="1" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">2</div>
+					<input min="1" id="2" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">3</div>
+					<input min="1" id="3" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">4</div>
+					<input min="1" id="4" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">5</div>
+					<input min="1" id="5" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">6</div>
+					<input min="1" id="6" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">7</div>
+					<input min="1" id="7" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">8</div>
+					<input min="1" id="8" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">9</div>
+					<input min="1" id="9" type="number" required>
+				</div>
+				<div class="front-nine">
+					<button class="calculate-front" type="submit" name="button">Calculate Front Score</button>
+					<h4>Front Nine Score:</h4>
+					<div class="front-nine-total"></div>
+				</div>
+			</form>
+
+			<form>
+				<div class="hole">
+					<div class="hole-number">10</div>
+					<input min="1" id="10" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">11</div>
+					<input min="1" id="11" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">12</div>
+					<input min="1" id="12" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">13</div>
+					<input min="1" id="13" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">14</div>
+					<input min="1" id="14" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">15</div>
+					<input min="1" id="15" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">16</div>
+					<input min="1" id="16" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">17</div>
+					<input min="1" id="17" type="number" required>
+				</div>
+				<div class="hole">
+					<div class="hole-number">18</div>
+					<input min="1" id="18" type="number" required>
+				</div>
+				<div class="back-nine">
+					<button class="calculate-back" type="submit" name="button">Calculate Back Score</button>
+					<h4>Back Nine Score:</h4>
+					<div class="back-nine-total"></div>
+				</div>
+			</form>
+
+			<div class="score">
+				<button class="calculate-total" type="submit" name="button">Calculate Total Score</button>
+				<h4>18 Hole Score:</h4>
+				<div class="score-combined"></div>
+			</div>
+		</div><!-- End scorecard -->
+	</main>
+	<footer>
+		<a href="https://mattmaneval.com/">&#128736;&#65039; by Matt Maneval</a>
+	</footer>
+	<script src="scripts.js"></script>
+</body>
+
 </html>

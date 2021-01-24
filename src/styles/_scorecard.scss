@@ -1,5 +1,7 @@
 .scorecard {
-  // display: flex;
+	display: flex;
+	justify-content: space-between;
+	
 }
 
 .hole {
@@ -10,5 +12,12 @@
 }
 
 input {
+  // width: 4em;
+}
 
+.front-nine-total,
+.back-nine-total,
+.score-combined {
+  font-size: 3em;
+  font-weight: bolder;
 }
